@@ -20,6 +20,8 @@ Animasi berhenti di luar viewport atau ketika tab tersembunyi, serta disembunyik
 
 Semua pesanan menuju WhatsApp. Tidak ada keranjang, pembayaran, akun, atau penyimpanan informasi pengunjung. Tombol WhatsApp membuka tab baru; tidak mengirim pesan otomatis.
 
+CTA WhatsApp pada kartu dan detail menyertakan nama, kategori, permintaan informasi harga/ukuran, dan link produk publik, misalnya `https://bleumflorist.vercel.app/#product=fresh-01`. Link membuka dialog detail produk saat halaman dimuat. URL publik diatur melalui `PUBLIC_SITE_URL` di `js/script.js`; harga masih diminta kepada admin karena katalog berisi placeholder. CTA konsultasi umum tidak menyertakan produk tertentu. Jalankan `node scripts/check-product-links.mjs` untuk memeriksa pesan dan navigasi link.
+
 ## Foto inspirasi
 
 Sumber foto stok: Unsplash. ID foto tercatat dalam `assets/images/SOURCES.md`. Ganti dengan foto milik klien sebelum produksi dan pastikan hak penggunaan aset final.
