@@ -1,6 +1,14 @@
 # Bleum.Flowers BSD — prototype
 
-Buka `index.html` langsung di browser, atau jalankan `python -m http.server 8000` dari folder ini dan buka http://localhost:8000. Tidak ada build atau dependency JavaScript.
+Buka `index.html` langsung di browser, atau jalankan `npm start` dari folder ini dan buka http://127.0.0.1:8000. Bundle animasi sudah disertakan sehingga preview tidak membutuhkan build.
+
+Untuk mengubah animasi: `npm ci`, lalu `npm run build`. Efek kelopak memakai JavaScript dan CSS; katalog tetap memakai JavaScript yang sudah ada.
+
+## Serpihan kelopak bunga
+
+`src/category-petals.ts` memasang 56 serpihan kelopak di setiap foto kategori, tersebar sepanjang siklus jatuh agar langsung terlihat ramai. Ukuran 6–18 px dan durasi jatuh 7–14 detik bervariasi. Warna pink, rose, dan peach mengikuti foto. Kelopak berputar dan bergeser mengikuti pointer. Lapisan dekorasi tidak menangkap klik; foto dan tautan produk tetap dapat digunakan.
+
+Animasi berhenti di luar viewport atau ketika tab tersembunyi, serta disembunyikan untuk preferensi reduced motion. Efek air sebelumnya tidak dimuat lagi. Source ThreeUI di `vendor/threeui/` disimpan sebagai referensi historis.
 
 ## Mengganti data
 
